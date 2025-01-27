@@ -16,13 +16,13 @@ const NavBar = () => {
           <div class="flex items-center">
             <a
               href="/"
-              aria-label="Flow Fund"
-              title="Flow Fund"
+              aria-label="Telos Fund"
+              title="Telos Fund"
               class="inline-flex items-center mr-8"
             >
               <Logo color="text-white" />
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Flow Fund
+              Telos Fund
               </span>
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
@@ -71,13 +71,13 @@ const NavBar = () => {
                     <div>
                       <a
                         href="/"
-                        aria-label="Flow Fund"
-                        title="Flow Fund"
+                        aria-label="Telos Fund"
+                        title="Telos Fund"
                         class="inline-flex items-center"
                       >
                         <Logo color="text-black" />
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Flow Fund
+                        Telos Fund
                         </span>
                       </a>
                     </div>

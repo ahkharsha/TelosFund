@@ -2,44 +2,44 @@ import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import crowdFunding from "./CrowdFunding.json";
 
-export const CrowdFundingAddress = "0xF859e215A276EC632Fb46DCca4EbccF99C8993D2";
+export const CrowdFundingAddress = "0x73641118e93Be1Ed8cE170E17E564Fa76b43a8fb";
 
 export const CrowdFundingABI = crowdFunding.abi;
 
-//NETWORK
+// NETWORK
 const networks = {
-  flow_mainnet: {
-    chainId: `0x${Number(747).toString(16)}`,
-    chainName: "Flow Mainnet",
+  telos_mainnet: {
+    chainId: `0x${Number(40).toString(16)}`,
+    chainName: "Telos EVM Mainnet",
     nativeCurrency: {
-      name: "FLOW",
-      symbol: "FLOW",
+      name: "TLOS",
+      symbol: "TLOS",
       decimals: 18,
     },
-    rpcUrls: ["https://mainnet.evm.nodes.onflow.org/"],
-    blockExplorerUrls: ["https://evm.flowscan.io/"],
+    rpcUrls: ["https://rpc.telos.net"],
+    blockExplorerUrls: ["https://www.teloscan.io/"],
   },
-  flow_testnet: {
-    chainId: `0x${Number(545).toString(16)}`,
-    chainName: "Flow Testnet",
+  telos_testnet: {
+    chainId: `0x${Number(41).toString(16)}`,
+    chainName: "Telos EVM Testnet",
     nativeCurrency: {
-      name: "FLOW",
-      symbol: "FLOW",
+      name: "TLOS",
+      symbol: "TLOS",
       decimals: 18,
     },
-    rpcUrls: ["https://testnet.evm.nodes.onflow.org/"],
-    blockExplorerUrls: ["https://evm-testnet.flowscan.io/"],
+    rpcUrls: ["https://testnet.telos.net/evm"],
+    blockExplorerUrls: ["https://testnet.teloscan.io/"],
   },
   localhost: {
-    chainId: `0x${Number(31337).toString(16)}`,
+    chainId: `0x${Number(5003).toString(16)}`,
     chainName: "localhost",
     nativeCurrency: {
-      name: "FLOW",
-      symbol: "FLOW",
+      name: "TLOS",
+      symbol: "TLOS",
       decimals: 18,
     },
     rpcUrls: ["http://127.0.0.1:8545/"],
-    blockExplorerUrls: ["https://evm-testnet.flowscan.io/"],
+    blockExplorerUrls: ["https://testnet.teloscan.io/"],
   },
 };
 
@@ -60,6 +60,6 @@ const changeNetwork = async ({ networkName }) => {
 };
 
 export const handleNetworkSwitch = async () => {
-  const networkName = "flow_testnet";
+  const networkName = "telos_testnet";
   await changeNetwork({ networkName });
 };
