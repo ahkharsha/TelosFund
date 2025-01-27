@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import crowdFunding from "./CrowdFunding.json";
 
-export const CrowdFundingAddress = "0x73641118e93Be1Ed8cE170E17E564Fa76b43a8fb";
+export const CrowdFundingAddress = "0xb06cbBeAE36EdBa7a14D733E8aE922a29630c7C1";
 
 export const CrowdFundingABI = crowdFunding.abi;
 
